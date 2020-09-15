@@ -1,0 +1,99 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title_img {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img_class1 {
+    width: 1265px;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img_class2 {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin-top: 28%;
+    margin-left: 1%;
+}
+
+.bottom-left1 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    margin-left: 11%;
+    margin-bottom: 6%;
+    color: white;
+    font-size: 50px;
+}
+
+.bottom-left2 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    margin-left: 11%;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 25px;
+}
+
+.links3 {
+    position: absolute;
+    margin-bottom: 25px;
+    bottom: 8px;
+    right: 90px;
+    font-size: 25px;
+}
+
+.links2 {
+    position: absolute;
+    margin-bottom: 25px;
+    font-size: 25px;
+    bottom: 8px;
+    right: 260px;
+}
+
+.links1 {
+    position: absolute;
+    font-size: 25px;
+    bottom: 8px;
+    right: 400px;
+    margin-bottom: 25px;
+}
+
+.links1 , .links2 , .links3 {
+    color: white;
+}
+
+.links1 a:hover, .links2 a:hover, .links3 a:hover {
+    text-decoration: underline;
+}
+
+.bodyh1 {
+    margin-top: 5%;
+}
+
+.para1 {
+    margin-top: 3%;
+}
+
+.bodbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
