@@ -6,6 +6,47 @@
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="niceGrub.css">
+        <style>
+            .container {
+              position: relative;
+              width: 50%;
+            }
+            
+            .image {
+              opacity: 1;
+              display: block;
+              width: 100%;
+              height: auto;
+              transition: .5s ease;
+              backface-visibility: hidden;
+            }
+            
+            .middle {
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+            }
+            
+            .container:hover .image {
+              opacity: 0.3;
+            }
+            
+            .container:hover .middle {
+              opacity: 1;
+            }
+            
+            .text {
+              color: black;
+              font-size: 60px;
+              padding: 16px 32px;
+              font-weight: bolder;
+            }
+            </style>
     </head>
     <body>
         <header>
@@ -14,9 +55,9 @@
                 <img class="img_class2" src="mocks/niceGrub/assets/simple-house-logo.png">
                 <h1 class="bottom-left1">Nice Grub</h1>
                 <p class="bottom-left2">Lorem Ipsum Dolor</p>
-                <span class="links1"><a>Home</a></span>
-                <span class="links2"><a>About</a></span>
-                <span class="links3"><a>Contact</a></span>
+                <p class="links1"><a>Home</a></p>
+                <p class="links2"><a>About</a></p>
+                <p class="links3"><a>Contact</a></p>
             </div>
         </header>
         <div>
@@ -30,24 +71,33 @@
                 <button class="bodbutton">Noodle</button>
         </center>
         <center>
-            <img class="selection1" src="mocks/niceGrub/assets/gallery/01.jpg">
-            <img class="selection1" src="mocks/niceGrub/assets/gallery/02.jpg">
-            <img class="selection1" src="mocks/niceGrub/assets/gallery/03.jpg">
-            <img class="selection1" src="mocks/niceGrub/assets/gallery/04.jpg">
-            <img class="selection1" src="mocks/niceGrub/assets/gallery/05.jpg">
-            <img class="selection1" src="mocks/niceGrub/assets/gallery/06.jpg">
-            <img class="selection1" src="mocks/niceGrub/assets/gallery/07.jpg">
-            <img class="selection1" src="mocks/niceGrub/assets/gallery/08.jpg">
+            <div class="container">
+                <img class="selection1" src="mocks/niceGrub/assets/gallery/01.jpg" style="width: 250px; height: 250;" alt="img1">
+                <div class="middle">
+                  <div class="text">Salad</div>
+                </div>
+              </div>
+            <img class="selection1" src="mocks/niceGrub/assets/gallery/01.jpg" style="width: 250px; height: 250;" alt="img1">
+            <img class="selection1" src="mocks/niceGrub/assets/gallery/02.jpg" style="width: 250px; height: 250;" alt="img2">
+            <img class="selection1" src="mocks/niceGrub/assets/gallery/03.jpg" style="width: 250px; height: 250;" alt="img3">
+            <img class="selection1" src="mocks/niceGrub/assets/gallery/04.jpg" style="width: 250px; height: 250;" alt="img4">
+            <img class="selection1" src="mocks/niceGrub/assets/gallery/05.jpg" style="width: 250px; height: 250;" alt="img5">
+            <img class="selection1" src="mocks/niceGrub/assets/gallery/06.jpg" style="width: 250px; height: 250;" alt="img6">
+            <img class="selection1" src="mocks/niceGrub/assets/gallery/07.jpg" style="width: 250px; height: 250;" alt="img7">
+            <img class="selection1" src="mocks/niceGrub/assets/gallery/08.jpg" style="width: 250px; height: 250;" alt="img8">
         </center>
         </div>
         <div>
-            <img class="fimage" src="mocks/niceGrub/assets/img-01.jpg">
-            <h2>Maecenas nulla neque</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-            Repundiandae amet perspiciatis labore dignissimos excepturi<br>
-            doloremque ex omnis beatae, neque quisquam natus quod,<br>
-            eius placeat maiores molestias laborum quisbusdam, dicta<br>
-            possimus?</p>
+            <center>
+                <img class="fimage" src="mocks/niceGrub/assets/img-01.jpg">
+                <h2>Maecenas nulla neque</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                Repundiandae amet perspiciatis labore dignissimos excepturi<br>
+                doloremque ex omnis beatae, neque quisquam natus quod,<br>
+                eius placeat maiores molestias laborum quisbusdam, dicta<br>
+                possimus?</p>
+            <p class="closing">Copyright © 2020 Nice Grub</p>
+            </center>
         </div>
     </body>
 </html>
